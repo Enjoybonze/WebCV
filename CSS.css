@@ -2,7 +2,7 @@
 body {
     font-family: Helvetica;
     font-size: 1.4em;
-        text-align: center;
+    text-align: center;
 }
 #black{
     background-color: rgb(68, 68, 68);
@@ -10,32 +10,19 @@ body {
     color: ffc107;
 }
 #centre{
-    width: 250px;
-    height: 400px;
+    width: 200px;
+    height: 500px;
 }
 #centre1{
-    width: 300px;
+    width: 350px;
 }
-
-.row {
-    left: auto;
-    background-color: ffc107;
-   }
 div.hobbies{float: left;
     margin-right: 50px;
     width: 280px;
     height: 150px;
     background-color: ffc107;}
-   
 #hobbiesimage{
     float:auto;
-}
-aside{
-    vertical-align: text-top;
-    text-align: right;
-    width: 400px;
-    height: 20px;
-    right:auto;
 }
 #whitehead {
     font-size: 150%; 
@@ -47,31 +34,26 @@ div.container {
     float: left;
     margin-right: 50px;
     width: 280px;
-    height: 350px;
+    height: 400px;
     background-color: ffc107;
-  
   }
-
-  .row{
+.row{
       Float:left;
       background-color: white;
   }
-  .row2{
-      right: 5cm;
-  }
-
-  img{
+img{
       border-radius: 2.5cm;
       background-color: ffc107;
   }
-  table.text  {
+table.text  {
     width:  300%; 
-    border-spacing: 1; 
+    border-spacing: 1;
+    box-sizing: 300px 400px; 
    }
-   table.text td {
+table.text td {
     width: 50%;
     vertical-align: top; 
    }
-   td.rightcol { 
+td.rightcol { 
     text-align: top; 
    }
