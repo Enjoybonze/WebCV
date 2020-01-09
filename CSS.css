@@ -46,9 +46,9 @@ img{
       background-color: ffc107;
   }
 table.text  {
-    width:  300%; 
+    width:  400%; 
     border-spacing: 1;
-    box-sizing: 300px 400px; 
+    height: 300px;
    }
 table.text td {
     width: 50%;
@@ -56,4 +56,5 @@ table.text td {
    }
 td.rightcol { 
     text-align: top; 
+    width: 50%;
    }
