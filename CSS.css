@@ -7,8 +7,12 @@ body {
 #black{
     background-color: rgb(68, 68, 68);
     text-align: center;
-    color: ffc107;
+    color: ffc107;}
+.hardname{
+    width: 800px;
 }
+#sidebig{ height: 700px;}
+
 #centre{
     width: 200px;
     height: 500px;
@@ -24,6 +28,10 @@ div.hobbies{float: left;
 #hobbiesimage{
     float:auto;
 }
+.blank{float:left;
+    width:200px;
+    height:100px;
+    border:0px;}
 #whitehead {
     font-size: 150%; 
     border-bottom: 2px solid maroon; 
@@ -58,3 +66,8 @@ td.rightcol {
     text-align: top; 
     width: 50%;
    }
+   <div id="device" style="padding: 0px; word-spacing: normal; position: relative;
+    box-sizing: content-box !important; text-align: left;
+     user-select: none; overflow: hidden; font-family: sans-serif;
+      min-height: 15px; font-size: 14px; line-height: 1em;
+       direction: ltr; height: 373.5px;"></div>
