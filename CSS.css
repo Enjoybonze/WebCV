@@ -38,9 +38,7 @@ div.hobbies{float: left;
     width: 280px;
     height: 150px;
     background-color: ffc107;}
-#hobbiesimage{
-    float:auto;
-}
+
 #freehead{border-bottom:2px solid rgb(255, 224,48);
         padding-bottom: 2px;
         }
@@ -86,7 +84,7 @@ li {list-style-type: none;
     list-style-position: inside;
     }
 li:before{
-    content:">  ";
+    content:"○  ";
     color: ffc107;
 }
 @media screen and (max-width: 600px) {
@@ -131,3 +129,15 @@ li:before{
     box-shadow: black 0px 0px 5px;
     height: 106%;
   }
+  .fas {color: ffc107;
+background-color: azure;}
+#yellow{
+    margin: 4ex;
+    text-align: center;
+}
+.fa-thumbs-up {
+    background-color: ffc107;
+    color: rgb(83, 78, 78);
+    border-color: black;
+    align-self: center;
+    }
