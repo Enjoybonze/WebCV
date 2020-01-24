@@ -24,6 +24,10 @@ body {
 }
 #centre1{
     width: 350px;
+ 
+    font-size: 16px;
+    box-sizing: border-box;
+    padding-right: 10px;
 }
 div.hobbies{float: left;
     margin-right: 50px;
@@ -47,6 +51,7 @@ div.hobbies{float: left;
     padding-bottom: 5px;
       }
 div.container {
+    margin: auto;
     float: left;
     margin-right: 50px;
     width: 280px;
@@ -84,4 +89,38 @@ td.rightcol {
 li {list-style-type: circle;
     list-style-position: inside;
 }
-    
+
+@media screen and (max-width: 600px) {
+    table thead {
+      display: none;
+    }
+  
+    table td {
+      display: block;
+      position: relative;
+      padding-left: 50%;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      text-align: left;
+      background: #e9e9e9;
+    }
+  
+    table td:before {
+      content: attr(data-th) " :";
+      display: inline-block;
+      color: #000000;
+      background: #e9e9e9;
+      border-right: 2px solid transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 33%;
+      max-height: 100%;
+  
+      font-size: 16px;
+      font-weight: 300;
+      padding-left: 13px;
+      padding-top: 13px;
+    }
+  }
