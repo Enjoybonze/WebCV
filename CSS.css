@@ -131,9 +131,10 @@ li:before{
   }
   .fas {color: ffc107;
 background-color: azure;}
+
 #yellow{
-    margin: 10%;
-    text-align: center;
+    margin: 5%;
+    text-align: left;
 }
 .fa-thumbs-up {
     background-color: ffc107;
@@ -141,3 +142,6 @@ background-color: azure;}
     border-color: black;
     align-self: center;
     }
+#yellow2 {
+    
+}
