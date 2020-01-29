@@ -1,118 +1,18 @@
-aside {
-    text-align: Left;
-}
-:default
-body {
-    font-family: Helvetica;
-    font-size: 1.4em;
-    text-align: right;
-}
-#john{
-    color: ffc107 ;
-}
-#picture{
-    max-width: 100%;
-    max-height: 100%;
-    width: 200;
-    height: 200;
- ;}
-.black{
-    background-color: rgb(68, 68, 68);
-    text-align: center;
-    color: ffc107;}
-.hardname{
-    width: 800px;
-}
-.sidebig{ height: 700px;}
-
-#centre{
+div.left {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: auto;
+    grid-row-end: 5;
+    background-color: Aqua;
     width: 200px;
-    height: 500px;
-}
-#centre1{
-    width: 350px;
- 
-    font-size: 16px;
-    box-sizing: border-box;
-    padding-right: 10px;
-}
-.hobbies{float: left;
-    margin-right: 50px;
-    width: 280px;
-    height: 150px;
-    background-color: ffc107;}
-
-#free{border-bottom:2px solid rgb(255, 224,48);
-        padding-bottom: 2px;
-        }
-.blank{float:left;
-    width:200px;
-    height:100px;
-    border:0px;}
-#whitehead {
-    font-size: 150%; 
-    border-bottom: 2px solid rgb(255, 224, 48); 
-    font-weight: normal; 
-    padding-bottom: 5px;
-      }
-.container { flex-direction: column;
-    margin: auto;
-    float: right;
-    margin-right: 50px;
-    width: 280px;
-    height: 400px;
-    background-color: ffc107;
-  }
-.row{
-      Float:left;
-      background-color: white;
-  }
-img{
-     background-color: ffc107;
-  }
-table.text  {
-    width:  400%; 
-    border-spacing: 1;
-    height: 300px;
-    }
-table.text td {
-    width: 50%;
-    vertical-align: top; 
-   }
-td.rightcol { 
-    text-align: top; 
-    width: 50%;
-   }
-li {list-style-type: none;
-    list-style-position: inside;
-    }
-li:before{
-    content:"○  ";
-    color: ffc107;
+    float: left;
 }
 
-
-  #header div img {
-    width: 138%;
-    margin: 1%;
-    box-sizing: border-box;
-    border-radius: 70% 70%;
-    box-shadow: black 0px 0px 5px;
-    height: 106%;
-  }
-  .fas {color: ffc107;
-background-color: azure;}
-
-#yellow{
-    margin: 5%;
-    text-align: left;
-}
-.fa-thumbs-up {
-    background-color: ffc107;
-    color: rgb(83, 78, 78);
-    border-color: black;
-    align-self: center;
-    }
-#yellow2 {
-    
+div.right {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: auto;
+    grid-row-end; 5;
+    background-color: Silver;
+    margin-left: 220px;
 }
