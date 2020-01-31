@@ -14,25 +14,27 @@
     grid-row-start: 2;
     grid-row-end: 5;
 }
-#head{grid-column-start: 1;
+#head {
+    grid-column-start: 1;
 grid-column-end: 5;
 grid-row-start: 1;
 grid-row-end: 5;
 height: auto;
 width: auto;
 margin-right: auto;}
-#photo {grid-column-start: 1;
+#photo {
+    grid-column-start: 1;
 grid-column-end: 1;
 grid-row-start: 1;
 grid-row-end: 1;
 width: auto;
 height: auto;}
-#name {grid-column-start: 2;
+#name {
+    grid-column-start: 2;
 grid-column-end: 2;
 grid-row-start: 1;
 grid-row-end: 1;}
-
-}   
+   
 
 :default
 body {
@@ -43,3 +45,66 @@ body {
         grid-template-columns: (5, 1fr);
         grid-template-rows: (5, 1fr);
            }
+           #photo{
+            max-width: 100%;
+            max-height: 100%;
+         width: 200;
+         height: 200;
+         ;}
+        #black{
+            background-color: rgb(68, 68, 68);
+            text-align: center;
+            color: ffc107;}
+      
+        }
+        #sidebig{ height: 700px;}
+        
+        #centre{
+            width: 200px;
+            height: 500px;
+        }
+      
+        div.hobbies{float: left;
+            margin-right: 50px;
+            width: 280px;
+            height: 150px;
+            background-color: ffc107;}
+        
+        #freehead{border-bottom:2px solid rgb(255, 224,48);
+                padding-bottom: 2px;
+                }
+        .blank{float:left;
+            width:200px;
+            height:100px;
+            border:0px;}
+        #whitehead {
+            font-size: 150%; 
+            border-bottom: 2px solid rgb(255, 224, 48); 
+            font-weight: normal; 
+            padding-bottom: 5px;
+              }
+
+        img{
+             background-color: ffc107;
+          }
+        table.text  {
+            width:  400%; 
+            border-spacing: 1;
+            height: 300px;
+            }
+        table.text td {
+            width: 50%;
+            vertical-align: top; 
+           }
+        td.rightcol { 
+            text-align: top; 
+            width: 50%;
+           }
+        li {list-style-type: none;
+            list-style-position: inside;
+            }
+        li:before{
+            content:"○  ";
+            color: ffc107;
+        }
+      
