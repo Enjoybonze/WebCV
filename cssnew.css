@@ -1,9 +1,20 @@
-div. {
+<<<<<<< HEAD
+div. {}
+:default
+body {
     display: grid;
+    font-family: Helvetica;
+    font-size: 1.4em;
+    text-align: left;
+    justify-content: center;
+    
 }
+#container{grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1cm;}
 #leftside {
     grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 5;
     background-color: ffc107;
@@ -12,11 +23,12 @@ div. {
     float: left;
 }
 .middleinfo {
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 5;
 }
+
 #head {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -24,15 +36,17 @@ div. {
     grid-row-end: 5;
     height: auto;
     width: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
     #photo {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
         width: auto;
-        height: auto;}
-        #name {
+        height: auto;
+}
+#name {
             grid-column-start: 2;
             grid-column-end: 3;
             grid-row-start: 1;
@@ -42,8 +56,6 @@ div. {
                 background-color: rgb(68, 68, 68);
                 text-align: center;
                 color: ffc107;}
-            
-            :default
             #photo {
                 max-width: 100%;
                 max-height: 100%;
@@ -77,6 +89,8 @@ div. {
     grid-column-end: 5;
     grid-row-start: 5;
     grid-row-end: 5;
+    text-align: top; 
+     width: 50%;
 }
 #header div img {
     width: 138%;
@@ -88,3 +102,10 @@ div. {
   }
   .fas {color: white;
 background-color: ffc107;}
+
+li {list-style-type: none;
+    list-style-position: inside;
+    }
+li:before{
+    content:"○  ";
+    color: ffc107;}
