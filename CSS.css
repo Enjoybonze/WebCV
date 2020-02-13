@@ -1,51 +1,45 @@
-:default
 body {
     font-family: Helvetica;
     font-size: 1.4em;
-    text-align: right;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+}
+nav {
+    max-width: 400px;
+    margin-right: 15px;
 }
 #john{
     color: ffc107 ;
 }
-#picture{
-    max-width: 100%;
-    max-height: 100%;
- width: 200;
- height: 200;
- ;}
+ #header img {
+     display: block;
+     max-width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 50% 50%;
+    box-shadow: black 0px 0px 5px;
+  }
 #black{
     background-color: rgb(68, 68, 68);
     text-align: center;
     color: ffc107;}
-.hardname{
-    width: 800px;
-}
-#sidebig{ height: 700px;}
-
+.hardname{}
+#sidebig{ }
 #centre{
-    width: 200px;
-    height: 500px;
 }
-#centre1{
-    width: 350px;
- 
+#centre1{    
     font-size: 16px;
     box-sizing: border-box;
     padding-right: 10px;
 }
 div.hobbies{float: left;
-    margin-right: 50px;
-    width: 280px;
-    height: 150px;
+
     background-color: ffc107;}
 
 #freehead{border-bottom:2px solid rgb(255, 224,48);
         padding-bottom: 2px;
         }
-.blank{float:left;
-    width:200px;
-    height:100px;
-    border:0px;}
 #whitehead {
     font-size: 150%; 
     border-bottom: 2px solid rgb(255, 224, 48); 
@@ -54,31 +48,26 @@ div.hobbies{float: left;
       }
 div.container {
     margin: auto;
-    float: left;
-    margin-right: 50px;
-    width: 280px;
-    height: 400px;
     background-color: ffc107;
   }
 .row{
-      Float:left;
       background-color: white;
   }
 img{
      background-color: ffc107;
   }
 table.text  {
-    width:  400%; 
+ 
     border-spacing: 1;
-    height: 300px;
+
     }
 table.text td {
-    width: 50%;
+
     vertical-align: top; 
    }
 td.rightcol { 
     text-align: top; 
-    width: 50%;
+
    }
 li {list-style-type: none;
     list-style-position: inside;
@@ -89,14 +78,7 @@ li:before{
 }
 
 
-  #header div img {
-    width: 138%;
-    margin: 1%;
-    box-sizing: border-box;
-    border-radius: 70% 70%;
-    box-shadow: black 0px 0px 5px;
-    height: 106%;
-  }
+
   .fas {color: ffc107;
 background-color: azure;}
 
