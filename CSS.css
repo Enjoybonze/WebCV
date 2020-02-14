@@ -88,6 +88,5 @@ li:before {
     align-self: center;
 }
 footer{
-    align-content: stretch;
-    
+    align-items: center;
 }
