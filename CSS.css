@@ -6,9 +6,9 @@ body {
     display: flex;
 }
 nav {
-    max-width: 400px;
-    margin-right: 15px;
 }
+#header{max-width: 400px;
+    margin-right: 15px;}
 #john{
     color: ffc107 ;
 }
@@ -19,23 +19,21 @@ nav {
     box-sizing: border-box;
     border-radius: 50% 50%;
     box-shadow: black 0px 0px 5px;
+    background-color: ffc107;
   }
-#black{
+.black{
     background-color: rgb(68, 68, 68);
     text-align: center;
     color: ffc107;}
 .hardname{}
 #sidebig{ }
-#centre{
-}
+#centre{}
 #centre1{    
     font-size: 16px;
     box-sizing: border-box;
     padding-right: 10px;
 }
-div.hobbies{float: left;
-
-    background-color: ffc107;}
+div.hobbies{    background-color: ffc107;}
 
 #freehead{border-bottom:2px solid rgb(255, 224,48);
         padding-bottom: 2px;
@@ -53,9 +51,7 @@ div.container {
 .row{
       background-color: white;
   }
-img{
-     background-color: ffc107;
-  }
+
 table.text  {
  
     border-spacing: 1;
@@ -82,8 +78,8 @@ li:before{
   .fas {color: ffc107;
 background-color: azure;}
 
-#yellow{
-    margin: 5%;
+.yellow{
+    margin: auto;
     text-align: left;
 }
 .fa-thumbs-up {
