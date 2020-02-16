@@ -31,11 +31,6 @@ nav {
     text-align: center;
     color: ffc107;
 }
-#centre1{    
-    font-size: 16px;
-    box-sizing: border-box;
-    padding-right: 10px;
-}
 #hobbies{ 
     background-color: ffc107;
 }
@@ -63,19 +58,19 @@ table {
     justify-content: start;
     vertical-align: text-top;
 }
-table ul { 
+table.text td {
+    vertical-align: top;
     min-width: 150px;
-    justify-content: start;
-    text-align: start;
+    justify-content: start; 
 }
 table ul p { 
         text-align: center;
 }
-li { 
+table.text li { 
     list-style-type: none;
     list-style-position: inside;
-}
-li:before {
+} 
+table.text li:before {
     content:"○  ";
     color: ffc107;
 }
