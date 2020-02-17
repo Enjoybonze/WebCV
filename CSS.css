@@ -1,6 +1,5 @@
 body {
-    font-family: Helvetica;
-    font-size: 1.4em;
+    font-size: 1em;
     max-width: 1000px;
     margin: auto;
     display: flex;
@@ -41,8 +40,7 @@ nav {
 }
 .whitehead {
     font-size: 150%; 
-    border-bottom: 2px solid rgb(255, 224, 48); 
-    font-weight: normal; 
+    border-bottom: 2px solid rgb(255, 224, 48);  
     padding-bottom: 5px;
 }
 .container {
@@ -98,4 +96,7 @@ footer td {
     font-family: Helvetica;
     font-size: 1em;
     align-self: auto;
+}
+table.text tr {
+    row-gap: 5cm;
 }
