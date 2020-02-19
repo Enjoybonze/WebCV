@@ -1,22 +1,29 @@
-@media screen and (max-width: 1280px) {
-    table thead {
-      
-      font-size: 100%;
-      line-height: 1.15;
-      margin: 0;
-      padding: 0;
-      outline: none;
-      border: none;
-      box-sizing: border-box;
-      font-weight: 300;
-    }}
-    ul {
-            padding: 0px;
-    }
-    
-    li {
-      
-        list-style: none;
-       
-        margin: 0px 20px;
-    }
+body {
+    display: flex;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.date {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.meddate {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+main article br {
+  display: none;
+}
+footer article br {
+  display: block;
+}

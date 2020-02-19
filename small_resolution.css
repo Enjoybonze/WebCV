@@ -1,34 +1,32 @@
 body {
-    display:block;
-}
-table thead {
-      display: block;
-    text-align: center;
-       font-size: 100%;
-      font-weight: 300;
-      padding-left: 13px;
-      padding-top: 13px;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      outline: 0;
-      background: 0 0;
-      border-radius: 0px;
+    
+    display: flex;
+    flex-direction: column-reverse;
 }
 nav {
         min-width: 200px;
         margin-right: 15px;
         max-width: 100%;
 }
-table.text td {
-      vertical-align: top;
-      min-width: 75px;
-      justify-content: start; 
-}
 .container{
     max-width: 100%;
 }
 #header{
     max-width: 100%;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
  

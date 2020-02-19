@@ -7,7 +7,10 @@ body {
 }
 nav {
     min-width: 300px;
-    margin-right: 15px;
+    margin-right: 20px;
+}
+main {
+    padding-left: 10px;
 }
 #header{
     max-width: 400px;
@@ -55,32 +58,7 @@ nav {
 .row{
   max-width: 800px;
 }
-table {
-    display: flex;
-    justify-content: start;
-    vertical-align: text-top;
-}
-table.text td {
-    vertical-align: top;
-    justify-content: start; 
-}
-table td.date {
-    min-width: 150px;
-}
 .bullets {
-    color: #ffc107;
-    text-align: right;
-    padding-right: 1em;
-}
-table ul p { 
-        text-align: center;
-}
-table.text li { 
-    list-style-type: none;
-    list-style-position: inside;
-} 
-table.text li:before {
-    content:"○  ";
     color: #ffc107;
 }
 .fas {
@@ -104,15 +82,52 @@ footer{
 }
 article.text {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
-table .fa-circle {
+.fa-circle {
     font-size: 0.5em;
-    padding-top: 5px;
-}
-.fa-dot-circle {
-    font-size: 0.6em;
-    padding-top: 5px;
+    padding: 6px 10px 10px;
+    margin-bottom: 3px;
+
 }
 
+.fa-dot-circle {
+    font-size: 0.6em;
+    padding: 6px 10px 10px;
+    margin-bottom: 3px;
+}
+.date {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    
+    vertical-align: top;
+    justify-content: start; 
+}
+.description {
+    display: flex;
+    flex-direction: column;
+}
+.description h3 {
+    margin-block-start: 0;
+}
+.description p {
+    margin-block-start: 0;
+}
+.description p {
+    margin-block-end: 20px;
+}
+#name {
+    padding-bottom: 15px;
+    font-size: 1.4em;
+}
+.meddate {
+    display: flex;
+    text-align: left;
+}
+#bigger {
+    height: 35%;
+}
+footer h4 {
+    margin-block-start: 0;
+}
