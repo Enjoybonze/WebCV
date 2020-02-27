@@ -1,0 +1,141 @@
+body {
+    font-size: 1em;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+}
+nav {
+    min-width: 300px;
+    margin-right: 40px;
+}
+main {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#header{
+    max-width: 400px;
+    margin-right: 40px;
+    background-color: #ffc107;
+}
+#john{
+    color: #ffc107 ;
+}
+#header img {
+    display: block;
+    max-width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 50% 50%;
+    box-shadow: black 0px 0px 5px;
+    background-color: #ffc107;
+}
+.black{
+    background-color: rgb(68, 68, 68);
+    text-align: center;
+    color: #ffc107;
+}
+#hobbies{ 
+    background-color: #ffc107;
+}
+#hobbiesimage .yellow {
+    text-align: center;
+}
+#Freehead{
+    border-bottom: 2px solid rgb(255, 224,48);
+    padding-bottom: 2px;
+}
+.whiteHead {
+    font-size: 150%; 
+    border-bottom: 2px solid rgb(253, 222, 46);  
+    padding-bottom: 15px;
+}
+.whiteHead .fas{
+    margin-right: 20px;
+
+}
+.container {
+    margin: auto;
+    background-color: #ffc107;
+    max-width: 500px;
+    text-align: center;
+}
+.row{
+  max-width: 800px;
+}
+.bullets {
+    color: #ffc107;
+}
+.fas {
+    color: #ffc107;
+}
+.yellow {
+    margin: auto;
+    text-align: left;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.fa-thumbs-up {
+    background-color: #ffc107;
+    color: rgb(83, 78, 78);
+    border-color: black;
+    align-self: center;
+}
+footer{
+    align-items: center;
+}
+article.text {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+.fa-circle {
+    font-size: 0.5em;
+    padding: 6px 10px 10px;
+    margin-bottom: 3px;
+}
+.fa-dot-circle {
+    font-size: 0.6em;
+    padding: 6px 10px 10px;
+    margin-bottom: 3px;
+}
+.date {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    
+    vertical-align: top;
+    justify-content: start; 
+}
+.description {
+    display: flex;
+    flex-direction: column;
+}
+.description h3 {
+    margin-block-start: 0;
+}
+.description p {
+    margin-block-start: 0;
+}
+.description p {
+    margin-block-end: 15px;
+}
+#name {
+    padding-bottom: 15px;
+    font-size: 1.4em;
+}
+.meddate {
+    display: flex;
+    text-align: left;
+}
+#bigger {
+    height: 35%;
+    text-align: justify;
+}
+footer h4 {
+    margin-block-start: 0;
+}
