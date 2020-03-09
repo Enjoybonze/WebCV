@@ -21,7 +21,7 @@ body {
   flex-direction: row;
   justify-content: stretch;
 }
-main article br {
+main article div {
   display: none;
 }
 footer article br {
