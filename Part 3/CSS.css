@@ -6,41 +6,26 @@ body {
     display: flex;
     font-family: 'Roboto', sans-serif;
 }
-
-
-
 #bar {
-    top:-7.65em; right:5em;
-     padding: .5em; 
-     margin: 0; 
-     position: absolute; 
-     width: 3.5em; 
-     color: white;
-     background: #333; 
-     text-align: center; 
-     /* tr */
-     -webkit-transition: top 1s ease-out 0.5s;
-     -moz-transition: top 1s ease-out 0.5s;
-     -o-transition: top 1s ease-out 0.5s;
-     transition: top 1s ease-out 0.5s;
-    }
-   #bar:hover { top: 0}
-   #bar a {color: white}
-   #bar button:hover {top: 0}
-   
- 
+    top: -7.7em; 
+    right: 5em;
+    padding: .5em; 
+    margin: 0; 
+    position: absolute; 
+    width: 3.5em; 
+    color: white;
+    background: #333; 
+    text-align: center; 
+    -webkit-transition: top 1s ease-out 0.5s;
+    -moz-transition: top 1s ease-out 0.5s;
+    -o-transition: top 1s ease-out 0.5s;
+    transition: top 1s ease-out 0.5s;
+}
+#bar:hover { top: 0}
 
+#bar a {color: white}
 
-
-
-
-
-
-
-
-
-
-
+#bar button:hover {top: 0}
 
 nav a {
     color: black;
@@ -93,7 +78,7 @@ main {
 }
 .whiteHead .fas{
     margin-right: 20px;
-
+    
 }
 .container {
     margin: auto;
@@ -102,7 +87,7 @@ main {
     text-align: center;
 }
 .row{
-  max-width: 800px;
+    max-width: 800px;
 }
 .bullets {
     color: #ffc107;
