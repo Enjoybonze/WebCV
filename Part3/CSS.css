@@ -1,4 +1,3 @@
-
 body {
     font-size: 1em;
     max-width: 1000px;
@@ -10,12 +9,12 @@ body {
     display: none;
   }
 #bar {
-z-index: 9999;
-  top: 150px;
-    top: -7.7em; 
+    z-index: 9999;
+    top: -9.7em; 
     right: 5em;
     padding: .5em; 
     margin: 0; 
+    list-style: none;
     position: fixed; 
     width: 3.5em; 
     color: white;
@@ -26,25 +25,33 @@ z-index: 9999;
     -o-transition: top 1s ease-out 0.5s;
     transition: top 1s ease-out 0.5s;
 }
-#bar:hover { top: 0}
+#bar:hover { 
+    top: 0
+}
+#bar li {
+    margin-bottom: 0.5em;
+}
+#burgericon-last {
+    margin-bottom: 0.1em;
+}
 
-#bar a {color: white}
+#bar a {
+    color: white;
+}
 
-#bar button:hover {top: 0}
-
+#bar button:hover {
+    top: 0
+}
 nav a {
     color: black;
     text-decoration: none;
-}
-nav {
-    min-width: 300px;
-    margin-right: 40px;
 }
 main {
     padding-left: 15px;
     padding-right: 15px;
 }
 #header{
+    min-width: 300px;
     max-width: 400px;
     margin-right: 40px;
     background-color: #ffc107;
@@ -165,4 +172,19 @@ article.text {
 }
 footer h4 {
     margin-block-start: 0;
+}
+
+
+
+
+
+
+
+section.row:hover article {
+    max-height: 1000px;
+}
+section.row article {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
 }
