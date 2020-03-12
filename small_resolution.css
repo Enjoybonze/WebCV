@@ -29,3 +29,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
 }
+.meddate br {
+    display: none;
+}
+
