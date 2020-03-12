@@ -21,9 +21,6 @@ body {
   flex-direction: row;
   justify-content: stretch;
 }
-main article div {
-  display: none;
-}
 footer article br {
   display: block;
 }
