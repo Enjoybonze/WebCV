@@ -29,3 +29,6 @@ nav {
     flex-direction: column;
     justify-content: space-around;
 }
+.meddate br {
+    display: none;
+}

@@ -6,6 +6,9 @@ body {
     display: flex;
     font-family: 'Roboto', sans-serif;
 }
+#div1{
+    display: none;
+  }
 #bar {
 z-index: 9999;
   top: 150px;
