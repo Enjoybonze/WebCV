@@ -2,9 +2,9 @@ body {
     display: flex;
     flex-direction: column;
 }
-#navigator {
+#navigation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .navigationbar {
     display: flex;
@@ -23,7 +23,9 @@ ul {
  .buttonnav {
     float: left;
   }
-  
+.selectedbutton {
+    background-color: green;
+}
 .buttonnav a {
     display: block;
     color: black;
