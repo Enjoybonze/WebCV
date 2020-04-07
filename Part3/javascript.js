@@ -14,7 +14,6 @@ function myFunction() {
 
 
 function select (button) {
-  console.log(button.id)
   document.getElementById("Frame").src ="./" + button.id + ".html";
   let buttons = document.getElementsByClassName("buttonnav");
   for (let index = 0; index < buttons.length; index++) {
@@ -22,4 +21,13 @@ function select (button) {
     element.classList.remove("selectedbutton");
   }
   button.classList.add("selectedbutton");
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }

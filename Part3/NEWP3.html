@@ -13,31 +13,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<nav id="navigationbar navigation">
-        <button  id="About" type="click" onclick="select(this)" class="buttonnav">Home</button>
-        <button  id="News" type="click" onclick="select(this)" class="buttonnav">News</button>
-        <button  id="Contact" type="click" onclick="select(this)" class="buttonnav">Contact</button>
-        <button  id="Blog" type="click" onclick="select(this)" class="buttonnav">Blog</button>
-        <button  id="MyProjects" type="click" onclick="select(this)" class="buttonnav">My Projects</button>
-</nav>
-<nav id="stickynavbar">
-    <ul id="stickybar">
-    <li><button  id="About" type="click" onclick="select(this)" class="buttonnav">Home</button></li>
-    <li><button  id="News" type="click" onclick="select(this)" class="buttonnav">News</button></li>
-    <li><button  id="Contact" type="click" onclick="select(this)" class="buttonnav">Contact</button></li>
-    <li><button  id="Blog" type="click" onclick="select(this)" class="buttonnav">Blog</button></li>
-    <li><button  id="MyProjects" type="click" onclick="select(this)" class="buttonnav">My Projects</button></li>
-    <li id="burgericon-last"><i class="fa fa-bars"></i></li>
-    </ul>
-</nav>
-<section id="maininfo">
-    <iframe frameborder="1" name="Frame" id="Frame"></iframe>
-    <div></div>
-</section>
-
-
-<script src="https://kit.fontawesome.com/ae7f722726.js" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="javascript.js"></script>
+    <nav id="stickynavbar">
+        <div class="topnav mobile-container">
+            <a  id="About" type="click" onclick="select(this)" class="buttonnav">Home</a>
+            <div id="myLinks">
+                <a style="animation-delay:0.07s" id="News" type="click" onclick="select(this)" class="buttonnav">News</a>
+                <a style="animation-delay:0.14s" id="Contact" type="click" onclick="select(this)" class="buttonnav">Contact</a>
+                <a style="animation-delay:0.21s" id="Blog" type="click" onclick="select(this)" class="buttonnav">Blog</a>
+                <a style="animation-delay:0.28s" id="MyProjects" type="click" onclick="select(this)" class="buttonnav">My Projects</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <section id="maininfo">
+        <iframe frameborder="1" name="Frame" id="Frame"></iframe>
+    </section>
+    
+    
+    <script src="https://kit.fontawesome.com/ae7f722726.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript.js"></script>
 </body>

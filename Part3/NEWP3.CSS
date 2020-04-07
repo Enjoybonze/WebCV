@@ -4,37 +4,57 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    max-width: 1200px;
+    max-width: 1000px;
     font-family: 'Roboto', sans-serif;
     margin: auto;
 }
-#Frame {
-    max-width:1000px;
-    max-height:600px;
-    margin: auto;
-}
-#frame:hover{
+.topnav {
+    position: absolute;
     top: 0;
 }
-#navigation {
-    display: flex;
-    flex-direction: column;
+.topnav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
 }
-.navigationbar {
-    display: flex;
-    flex-direction: row;
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:white;
-    max-width: 250px;
-  }
- .buttonnav {
-    float: left;
-  }
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+#maininfo {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    left:1200px;
+} 
+iframe:focus {
+    outline: none;
+}
+iframe[seamless] {
+    display: flex;
+} 
+
+#Frame {
+    border-top-left-radius: 10px;
+    border-style: groove;
+    border-color: chocolate;
+    width: 500px;
+    height: max-content;
+}
+
 .selectedbutton {
     background-color: green;
 }
@@ -44,36 +64,45 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
 .buttonnav a:hover {
     background-color: rgb(236, 234, 234);
-  }
-#stickybar {
-    z-index: 9999;
-    top: -9.7em; 
-    right: 5em;
-    padding: .5em; 
-    margin: 0; 
-    list-style: none;
-    position: fixed; 
-    width: 3.5em; 
-    color: white;
-    background: #333; 
-    text-align: center; 
-    -webkit-transition: top 1s ease-out 0.5s;
-    -moz-transition: top 1s ease-out 0.5s;
-    -o-transition: top 1s ease-out 0.5s;
-    transition: top 1s ease-out 0.5s;
 }
-#stickybar:hover { 
-    top: 0
+a.buttonnav{
+    display:inline-block;
+    padding:0.7em 1.4em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.15em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    text-transform:uppercase;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#3369ff;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    text-align:center;
+    position:relative;
 }
-#stickybar li {
-    margin-bottom: .5em;
+a.buttonnav:active{
+    top:0;
 }
-#stickybar a {
-    color: white;
+@media all and (max-width:30em){
+     a.buttonnav{
+        display:block;
+        margin:0.4em auto;}
+    }
+.bouncy {
+        animation:bouncy 5s infinite linear;
+        position: relative;
+    }
+@keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
 }
-#stickybar button:hover {
-    top: 0
-}
+    
