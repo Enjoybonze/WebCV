@@ -7,7 +7,6 @@ function myFunction() {
       x.className = "topnav";
     }
 }
-
 function myFunction() {
   document.getElementById("colorchange").style.color = "red";
 }

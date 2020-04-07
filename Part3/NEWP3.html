@@ -4,7 +4,7 @@
     <title>Resume
     </title>
     <meta charset="utf-8"/>
-  
+    <div style="background-image: url('img_girl.jpg');"></div>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="NEWP3.css" type="text/css">
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="small_resolution.css">
@@ -13,40 +13,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
- <figure id="MyImage">
-     <img src="https://i.ibb.co/njS6W0q/jokers-heathledger-1-1.jpg"
-     srcset="https://i.ibb.co/njS6W0q/jokers-heathledger-1-1.jpg 3x"
-     alt="Joker" Title="John Doe">
- </figure>
-<nav class="active navigationbar">
-    <div id="navigation">
-        <input type="button" id="buttonC" value="Click">
-         <iframe frameborder="1" name="Frame" id="Frame" width="1000" height="600"></iframe>
-        <button  id="About" type="click" onclick="select(this)" class="buttonnav">About</button>
+<nav id="navigationbar navigation">
+        <button  id="About" type="click" onclick="select(this)" class="buttonnav">Home</button>
         <button  id="News" type="click" onclick="select(this)" class="buttonnav">News</button>
         <button  id="Contact" type="click" onclick="select(this)" class="buttonnav">Contact</button>
         <button  id="Blog" type="click" onclick="select(this)" class="buttonnav">Blog</button>
-    </div>
+        <button  id="MyProjects" type="click" onclick="select(this)" class="buttonnav">My Projects</button>
 </nav>
-<nav class="active stickynavbar">
+<nav id="stickynavbar">
     <ul id="stickybar">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a class="linkclass" href="contact.html" role="link" tabindex="0">Contact</a></li>
-    <li><a href="#blog">Blog</a></li>
-    <li><a href="#startproject">Start project</a></li>
+    <li><button  id="About" type="click" onclick="select(this)" class="buttonnav">Home</button></li>
+    <li><button  id="News" type="click" onclick="select(this)" class="buttonnav">News</button></li>
+    <li><button  id="Contact" type="click" onclick="select(this)" class="buttonnav">Contact</button></li>
+    <li><button  id="Blog" type="click" onclick="select(this)" class="buttonnav">Blog</button></li>
+    <li><button  id="MyProjects" type="click" onclick="select(this)" class="buttonnav">My Projects</button></li>
     <li id="burgericon-last"><i class="fa fa-bars"></i></li>
     </ul>
 </nav>
 <section id="maininfo">
-    <div ></div>
+    <iframe frameborder="1" name="Frame" id="Frame"></iframe>
+    <div></div>
 </section>
-
 
 
 <script src="https://kit.fontawesome.com/ae7f722726.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="javascript.js"></script>
-
 </body>

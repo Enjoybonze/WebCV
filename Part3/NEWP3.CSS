@@ -1,6 +1,20 @@
 body {
     display: flex;
-    flex-direction: column;
+    background-image: url(http://www.allwhitebackground.com/images/5/Classic-Retro-Background-Image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 1200px;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+#Frame {
+    max-width:1000px;
+    max-height:600px;
+    margin: auto;
+}
+#frame:hover{
+    top: 0;
 }
 #navigation {
     display: flex;
@@ -8,7 +22,7 @@ body {
 }
 .navigationbar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 ul {
     list-style-type: none;
@@ -16,8 +30,6 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color:white;
-    display: flex;
-    flex-direction: column;
     max-width: 250px;
   }
  .buttonnav {
@@ -36,8 +48,7 @@ ul {
 .buttonnav a:hover {
     background-color: rgb(236, 234, 234);
   }
-
-  #stickybar {
+#stickybar {
     z-index: 9999;
     top: -9.7em; 
     right: 5em;
@@ -58,14 +69,11 @@ ul {
     top: 0
 }
 #stickybar li {
-    margin-bottom: 0.5em;
+    margin-bottom: .5em;
 }
-
-
 #stickybar a {
     color: white;
 }
-
 #stickybar button:hover {
     top: 0
 }
