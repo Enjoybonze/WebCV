@@ -1,18 +1,3 @@
-function myFunction() {
-    var x = document.getElementById("id");
-    if (x.className === "topnav") {
-      x.className += "responsive";
-    } 
-    else {
-      x.className = "topnav";
-    }
-}
-function myFunction() {
-  document.getElementById("colorchange").style.color = "red";
-}
-
-
-
 function select (button) {
   document.getElementById("Frame").src ="./" + button.id + ".html";
   let buttons = document.getElementsByClassName("buttonnav");
@@ -23,8 +8,8 @@ function select (button) {
   button.classList.add("selectedbutton");
 }
 
-function myFunction() {
-  var x = document.getElementById("myLinks");
+function BurgerList() {
+  var x = document.getElementById("burger");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {

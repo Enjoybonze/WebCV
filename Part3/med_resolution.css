@@ -1,32 +1,6 @@
 body {
     display: flex;
 }
-.description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.date {
-  display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-}
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.meddate {
-  display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-}
-main article br {
-  display: none;
-}
-footer article br {
-  display: block;
-}
 .mobile-container {
   max-width: 480px;
   margin: auto;
@@ -35,6 +9,6 @@ footer article br {
   color: white;
   border-radius: 10px;
 }
-.topnav #myLinks {
+.topnav #burger {
   display: none;
 }

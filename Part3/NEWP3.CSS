@@ -1,108 +1,228 @@
 body {
-    display: flex;
-    background-image: url(http://www.allwhitebackground.com/images/5/Classic-Retro-Background-Image.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    max-width: 1000px;
-    font-family: 'Roboto', sans-serif;
-    margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(http://www.allwhitebackground.com/images/5/Classic-Retro-Background-Image.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 1200px;
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
 }
+
 .topnav {
-    position: absolute;
-    top: 0;
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 0;
 }
+
 .topnav a {
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
+  color: white;
+  float: left;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 17px;
 }
-.topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+
+.topnav a a:hover {
+  background-color: white;
+  color: black;
 }
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+
+.topnav a a:hover a.active {
+  background-color: #4CAF50;
+  color: white;
 }
-.active {
-    background-color: #4CAF50;
-    color: white;
+
+.icon {
+  background: black;
+  display: block;
+  position: static;
+  right: 0;
+  top: 0;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown .dropdown-content a a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown .dropdown-content a a:hover {
+  display: block;
+}
+
+.dropdown:hover .dropdown .dropdown-content a a:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.buttonnav {
+  display: inline-block;
+  padding: 0.7em 1.4em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.15em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto',sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #FFFFFF;
+  background-color: #3369ff;
+  -webkit-box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+          box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  text-align: center;
+  position: relative;
+}
+
+.buttonnav a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0.4em auto;
+}
+
+.buttonnav a a:hover {
+  background-color: #eceaea;
+}
+
+.buttonnav a a:hover :active {
+  top: 0;
+}
+
+#About {
+  -webkit-animation-delay: 0.07s;
+          animation-delay: 0.07s;
+}
+
+#News {
+  -webkit-animation-delay: 0.14s;
+          animation-delay: 0.14s;
+}
+
+#Contact {
+  -webkit-animation-delay: 0.21s;
+          animation-delay: 0.21s;
+}
+
+#PetBarbershop {
+  -webkit-animation-delay: 0.28s;
+          animation-delay: 0.28s;
+}
+
+#OurLocation {
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+}
+
 #maininfo {
-    position: -webkit-sticky;
-    position: sticky;
-    top:0;
-    left:1200px;
-} 
-iframe:focus {
-    outline: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 1200px;
 }
-iframe[seamless] {
-    display: flex;
-} 
 
 #Frame {
-    border-top-left-radius: 10px;
-    border-style: groove;
-    border-color: chocolate;
-    width: 500px;
-    height: max-content;
+  border-top-left-radius: 10px;
+  border-style: groove;
+  border-color: white;
+  width: 500px;
+  height: 700px;
 }
 
 .selectedbutton {
-    background-color: green;
+  background-color: green;
 }
-.buttonnav a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.buttonnav a:hover {
-    background-color: rgb(236, 234, 234);
-}
-a.buttonnav{
-    display:inline-block;
-    padding:0.7em 1.4em;
-    margin:0 0.3em 0.3em 0;
-    border-radius:0.15em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    text-transform:uppercase;
-    font-weight:300;
-    color:#FFFFFF;
-    background-color:#3369ff;
-    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
-    text-align:center;
-    position:relative;
-}
-a.buttonnav:active{
-    top:0;
-}
-@media all and (max-width:30em){
-     a.buttonnav{
-        display:block;
-        margin:0.4em auto;}
-    }
+
 .bouncy {
-        animation:bouncy 5s infinite linear;
-        position: relative;
-    }
-@keyframes bouncy {
-    0%{top:0em}
-    40%{top:0em}
-    43%{top:-0.9em}
-    46%{top:0em}
-    48%{top:-0.4em}
-    50%{top:0em}
-    100%{top:0em;}
+  -webkit-animation: bouncy 5s infinite linear;
+          animation: bouncy 5s infinite linear;
+  position: relative;
 }
-    
+
+@-webkit-keyframes bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+@keyframes bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+/*# sourceMappingURL=NEWP3.css.map */

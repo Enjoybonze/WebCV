@@ -6,23 +6,26 @@
     <meta charset="utf-8"/>
     <div style="background-image: url('img_girl.jpg');"></div>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="NEWP3.css" type="text/css">
+    <link rel="stylesheet" href="NEWP3.css">
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="small_resolution.css">
     <link rel="stylesheet" media="screen and (max-width: 800px)" href="med_resolution.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="NEWP3.scss">
 </head>
 <body>
-    <nav id="stickynavbar">
-        <div class="topnav mobile-container">
-            <a  id="About" type="click" onclick="select(this)" class="buttonnav">Home</a>
-            <div id="myLinks">
-                <a style="animation-delay:0.07s" id="News" type="click" onclick="select(this)" class="buttonnav">News</a>
-                <a style="animation-delay:0.14s" id="Contact" type="click" onclick="select(this)" class="buttonnav">Contact</a>
-                <a style="animation-delay:0.21s" id="Blog" type="click" onclick="select(this)" class="buttonnav">Blog</a>
-                <a style="animation-delay:0.28s" id="MyProjects" type="click" onclick="select(this)" class="buttonnav">My Projects</a>
+    <nav class="topnav">
+        <div class="mobile-container">
+            <div id="burger">
+                <a id="About" type="click" onclick="select(this)" class="buttonnav bouncy">Home</a>
+                <a id="News" type="click" onclick="select(this)" class="buttonnav bouncy">News</a>
+                <a id="Contact" type="click" onclick="select(this)" class="buttonnav bouncy">Contact</a>
+                <a id="PetBarbershop" type="click" onclick="select(this)" class="buttonnav bouncy dropbtn">Pet Barbershop</a>
+                <a id="OurLocation" type="click" onclick="select(this)" class="buttonnav bouncy">Our Location</a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="icon" onclick="BurgerList()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
@@ -37,3 +40,19 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="javascript.js"></script>
 </body>
+
+
+<div class="dropdown-content">
+    <a id="HairStyles" type="click" onclick="select(this)" class="">Cuts &#8680;</a>
+    <div class="side-content">
+        <a id="TeddyBearCut" type="click" onclick="select(this)" class="">Teddy Bear</a>
+        <a id="PoodleCut" type="click" onclick="select(this)" class="">Poodle</a>
+        <a id="LambCut" type="click" onclick="select(this)" class="">Lamb</a>
+        <a id="ShavedCut" type="click" onclick="select(this)" class="">Shaved</a>
+        <a id="KennelCut" type="click" onclick="select(this)" class="">KennelCut</a> 
+        <a id="TopknotCut" type="click" onclick="select(this)" class="">Topknot</a>
+        <a id="CleanFaceCut" type="click" onclick="select(this)" class="">Clean Face</a>
+    </div>
+    <a id="PetTypes" type="click" onclick="select(this)" class="">Types &#8680;</a>
+    <a id="Locations" type="click" onclick="select(this)" class="">Places &#8680;</a>
+    <div class="dropdown">
