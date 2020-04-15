@@ -11,37 +11,6 @@ body {
   margin: auto;
 }
 
-.topnav {
-  position: static;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  top: 0;
-}
-
-.topnav a {
-  color: white;
-  float: left;
-  padding: 10px 20px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 17px;
-}
-
-.topnav a a:hover {
-  background-color: white;
-  color: black;
-}
-
-.topnav a a:hover a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
 .icon {
   background: black;
   display: block;
@@ -55,7 +24,7 @@ body {
   display: inline-block;
 }
 
-.dropdown .dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -65,23 +34,38 @@ body {
   z-index: 1;
 }
 
-.dropdown .dropdown-content a {
+.dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown .dropdown-content a a:hover {
+.dropdown-content a a:hover {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown .dropdown-content a a:hover {
+.dropdown:hover .dropdown-content a a:hover {
   display: block;
 }
 
-.dropdown:hover .dropdown .dropdown-content a a:hover .dropbtn {
+.dropdown:hover .dropdown-content a a:hover .dropbtn {
   background-color: #3e8e41;
+}
+
+.selectedbutton {
+  background-color: green;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.selectedbutton:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .buttonnav {
@@ -116,7 +100,7 @@ body {
   background-color: #eceaea;
 }
 
-.buttonnav a a:hover :active {
+.buttonnav a a:hover .buttonnav:active {
   top: 0;
 }
 
@@ -149,19 +133,14 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  left: 1200px;
 }
 
 #Frame {
   border-top-left-radius: 10px;
   border-style: groove;
   border-color: white;
-  width: 500px;
-  height: 700px;
-}
-
-.selectedbutton {
-  background-color: green;
+  width: 70%;
+  height: 90%;
 }
 
 .bouncy {
@@ -224,5 +203,88 @@ body {
   padding: 16px;
   font-size: 16px;
   border: none;
+}
+
+.carousel-item img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenav a a:hover {
+  color: #ffffff;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+span {
+  font-size: 30px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=NEWP3.css.map */
