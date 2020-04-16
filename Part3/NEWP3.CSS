@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  max-height: 100%;
   max-width: 1200px;
   font-family: 'Roboto', sans-serif;
   margin: auto;
@@ -130,8 +131,6 @@ body {
 }
 
 #maininfo {
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
 }
 
@@ -139,8 +138,8 @@ body {
   border-top-left-radius: 10px;
   border-style: groove;
   border-color: white;
-  width: 70%;
-  height: 90%;
+  width: 200%;
+  height: 200%;
 }
 
 .bouncy {
@@ -286,5 +285,9 @@ body {
 span {
   font-size: 30px;
   cursor: pointer;
+}
+
+.carousel-control-next {
+  position: fixed;
 }
 /*# sourceMappingURL=NEWP3.css.map */

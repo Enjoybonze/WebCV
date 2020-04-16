@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    max-height: 100%;
     max-width: 1200px;
     font-family: 'Roboto', sans-serif;
     margin: auto;}
@@ -78,15 +79,13 @@ body {
 #PetBarbershop{animation-delay: 0.28s;}
 #OurLocation{animation-delay: 0.35s;}
 #maininfo {
-    position: -webkit-sticky;
-    position: sticky;
     top:0;} 
 #Frame {
     border-top-left-radius: 10px;
     border-style: groove;
     border-color: white;
-    width: 70%;
-    height: 90%;}
+    width: 200%;
+    height: 200%;}
 .bouncy {
     animation:bouncy 5s infinite linear;
     position: relative;
@@ -140,8 +139,7 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  
+}
 @media screen and (max-width:800px) {
     body {
         display: flex;
@@ -170,4 +168,7 @@ body {
 span {
     font-size:30px;
     cursor:pointer;
+}
+.carousel-control-next {
+    position: fixed;
 }
