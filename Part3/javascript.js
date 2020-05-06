@@ -24,3 +24,20 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.left = "-250px";
 }
+
+
+
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("show1") == -1) {
+    x.className += " show1";
+  } else { 
+    x.className = x.className.replace(" show1", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "Liked";
+}
