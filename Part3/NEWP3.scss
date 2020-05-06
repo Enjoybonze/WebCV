@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    max-height: 100%;
+    height: 100vh;
     max-width: 1200px;
     font-family: 'Roboto', sans-serif;
     margin: auto;}
@@ -13,29 +13,36 @@ body {
         display: block;
         position: static;
         right: 0;
-        top: 0;}
+        top: 0;
+    }
 .dropdown {
     position: relative;
     display: inline-block;
     &-content {
-      display: none;
-      position: absolute;
-      background-color: #f1f1f1;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-      & a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-      a:hover {
-          background-color: #ddd;
-      .dropdown:hover &{
-          display:block;
-    & .dropbtn {
-          background-color: #3e8e41;
-  }}}}}}
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            &:hover {
+                background-color: #ddd;
+            }
+        }
+    }
+    &:hover {
+        display:block;
+        .dropbtn {
+            background-color: #3e8e41;
+        }
+    }
+}
+
 .selectedbutton {
     background-color: green;
     font-size: 3rem;
@@ -61,31 +68,44 @@ body {
     box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
     text-align:center;
     position:relative;
-    & a { 
+    a { 
         display: block;
         color: black;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
         margin:0.4em auto;
-    & a:hover {
-        background-color: rgb(236, 234, 234);
-    .buttonnav:active{
-        top:0;
-}}}}
+        
+        &:hover {
+            background-color: rgb(236, 234, 234);
+        }
+        &:active{
+            top:0;
+        }
+    }
+}
+
 #About{animation-delay: 0.07s;}
 #News{animation-delay: 0.14s;}
 #Contact{animation-delay: 0.21s;}
 #PetBarbershop{animation-delay: 0.28s;}
 #OurLocation{animation-delay: 0.35s;}
+
 #maininfo {
-    top:0;} 
+    width: 100%;
+    top:0;
+    display: flex;
+    justify-content: flex-end;
+} 
 #Frame {
     border-top-left-radius: 10px;
     border-style: groove;
     border-color: white;
-    width: 200%;
-    height: 200%;}
+    width: 60%;
+    height: 60%;
+}
+
+
 .bouncy {
     animation:bouncy 5s infinite linear;
     position: relative;
@@ -107,16 +127,15 @@ body {
     border: none;
 }
 .carousel-item img {
-    max-width: 50%;
-    max-height: 50%;
+
 }
 .sidenav {
     height: 100%;
-    width: 0px;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: -250px;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -168,7 +187,4 @@ body {
 span {
     font-size:30px;
     cursor:pointer;
-}
-.carousel-control-next {
-    position: fixed;
 }

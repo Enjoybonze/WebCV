@@ -6,7 +6,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  max-height: 100%;
+  height: 100vh;
   max-width: 1200px;
   font-family: 'Roboto', sans-serif;
   margin: auto;
@@ -42,15 +42,15 @@ body {
   display: block;
 }
 
-.dropdown-content a a:hover {
+.dropdown-content a:hover {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content a a:hover {
+.dropdown:hover {
   display: block;
 }
 
-.dropdown:hover .dropdown-content a a:hover .dropbtn {
+.dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
 
@@ -97,11 +97,11 @@ body {
   margin: 0.4em auto;
 }
 
-.buttonnav a a:hover {
+.buttonnav a:hover {
   background-color: #eceaea;
 }
 
-.buttonnav a a:hover .buttonnav:active {
+.buttonnav a:active {
   top: 0;
 }
 
@@ -131,15 +131,22 @@ body {
 }
 
 #maininfo {
+  width: 100%;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #Frame {
   border-top-left-radius: 10px;
   border-style: groove;
   border-color: white;
-  width: 200%;
-  height: 200%;
+  width: 60%;
+  height: 60%;
 }
 
 .bouncy {
@@ -204,18 +211,13 @@ body {
   border: none;
 }
 
-.carousel-item img {
-  max-width: 50%;
-  max-height: 50%;
-}
-
 .sidenav {
   height: 100%;
-  width: 0px;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: -250px;
   background-color: #111;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
@@ -285,9 +287,5 @@ body {
 span {
   font-size: 30px;
   cursor: pointer;
-}
-
-.carousel-control-next {
-  position: fixed;
 }
 /*# sourceMappingURL=NEWP3.css.map */

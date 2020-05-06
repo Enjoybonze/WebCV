@@ -6,6 +6,7 @@ function select (button) {
     element.classList.remove("selectedbutton");
   }
   button.classList.add("selectedbutton");
+  closeNav();
 }
 
 function BurgerList() {
@@ -18,8 +19,8 @@ function BurgerList() {
 }
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.left = "0px";
 }
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0px";
+  document.getElementById("mySidenav").style.left = "-250px";
 }
