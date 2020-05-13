@@ -42,7 +42,6 @@ body {
         }
     }
 }
-
 .selectedbutton {
     background-color: green;
     font-size: 3rem;
@@ -84,15 +83,13 @@ body {
         }
     }
 }
-
 #About{animation-delay: 0.07s;}
 #News{animation-delay: 0.14s;}
 #Contact{animation-delay: 0.21s;}
 #PetBarbershop{animation-delay: 0.28s;}
 #OurLocation{animation-delay: 0.35s;}
-
 #maininfo {
-    width: 100%;
+    width: 1000px;
     top:0;
     display: flex;
     justify-content: flex-end;
@@ -101,11 +98,9 @@ body {
     border-top-left-radius: 10px;
     border-style: groove;
     border-color: white;
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
 }
-
-
 .bouncy {
     animation:bouncy 5s infinite linear;
     position: relative;
@@ -125,9 +120,6 @@ body {
     padding: 16px;
     font-size: 16px;
     border: none;
-}
-.carousel-item img {
-
 }
 .sidenav {
     height: 100%;
@@ -187,4 +179,35 @@ body {
 span {
     font-size:30px;
     cursor:pointer;
+}
+
+#transitionLocation {
+    width: 100px;
+    height: 100px;
+    background: greenyellow;
+    transition: width 2s, height 4s;
+  &:hover {
+    width: 200px;
+    height: 200px;
+  }}
+.show1 {
+    display:block!important;
+}
+#AnimLine {
+    animation-timing-function: ease;
+        width: 100px;
+        height: 50px;
+        background-color: red;
+        font-weight: bold;
+        position: relative;
+        animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
+
+.Transparent {
+    background-image: none;
+    background-color: transparent;
 }

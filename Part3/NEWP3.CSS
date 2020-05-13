@@ -131,7 +131,7 @@ body {
 }
 
 #maininfo {
-  width: 100%;
+  width: 1000px;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,8 +145,8 @@ body {
   border-top-left-radius: 10px;
   border-style: groove;
   border-color: white;
-  width: 60%;
-  height: 60%;
+  width: 70%;
+  height: 70%;
 }
 
 .bouncy {
@@ -287,5 +287,57 @@ body {
 span {
   font-size: 30px;
   cursor: pointer;
+}
+
+#transitionLocation {
+  width: 100px;
+  height: 100px;
+  background: greenyellow;
+  -webkit-transition: width 2s, height 4s;
+  transition: width 2s, height 4s;
+}
+
+#transitionLocation:hover {
+  width: 200px;
+  height: 200px;
+}
+
+.show1 {
+  display: block !important;
+}
+
+#AnimLine {
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s infinite;
+          animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+
+.Transparent {
+  background-image: none;
+  background-color: transparent;
 }
 /*# sourceMappingURL=NEWP3.css.map */

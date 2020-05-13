@@ -18,6 +18,11 @@ function BurgerList() {
   }
 }
 
+function subscribe() {
+  document.getElementById('subscribe').style.display='none';
+}
+
+
 function openNav() {
   document.getElementById("mySidenav").style.left = "0px";
 }
@@ -28,12 +33,12 @@ function closeNav() {
 
 
 document.getElementById("myBtn").click();
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("show1") == -1) {
-    x.className += " show1";
+function myFunction() {
+  var x = document.getElementById('myBtn');
+  if (x.className.indexOf("demo3") == -1) {
+    x.className += " demo3";
   } else { 
-    x.className = x.className.replace(" show1", "");
+    x.className = x.className.replace(" demo3", "");
   }
 }
 
