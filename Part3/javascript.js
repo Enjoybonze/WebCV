@@ -33,16 +33,23 @@ function closeNav() {
 
 
 document.getElementById("myBtn").click();
-function myFunction() {
-  var x = document.getElementById('myBtn');
-  if (x.className.indexOf("demo3") == -1) {
-    x.className += " demo3";
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
   } else { 
-    x.className = x.className.replace(" demo3", "");
+    x.className = x.className.replace(" w3-show", "");
   }
 }
 
 function likeFunction(x) {
   x.style.fontWeight = "bold";
   x.innerHTML = "Liked";
+}
+
+function initMap() {
+  var uluru = {lat: -25.344, lng: 131.036};
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  var marker = new google.maps.Marker({position: uluru, map: map});
 }
