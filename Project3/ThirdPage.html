@@ -1,0 +1,27 @@
+<html #contact lang="en">
+<head>
+  <link rel="stylesheet" href="Project3.css">
+</head>
+<body>
+  <div id="ThP-Container">
+    <form action="mail.php" method="GET">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fio" placeholder="Your name.." required>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="fio" placeholder="Your last name.." required>
+      <label for="email">E-mail</label>
+      <input type="text" id="email" name="email" placeholder="Your email" required>
+      <label for="country">Country</label> 
+
+      <select id="country" name="country" required>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

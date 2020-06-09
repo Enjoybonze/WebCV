@@ -1,0 +1,152 @@
+
+body {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  max-width: 1200px;
+  height: 900px;
+  margin: auto;
+}
+@keyframes bouncing{
+  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+  100%{ bottom: 50px; box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
+}
+a.StP-Button2 {
+  position: relative;
+  display: inline-block;
+  font-size: 100%;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: #053852 -1px 1px, #053852 1px 1px, #053852 1px -1px, #053852 -1px -1px;
+  text-decoration: none;
+  user-select: none;
+  padding: .3em .7em;
+  outline: none;
+  border-radius: 7px;
+  background: #053852 repeating-linear-gradient(135deg, #053852, #053852 10px, #1679ad 10px, #1679ad 20px, #053852 20px);
+  box-shadow:
+   inset -2px -2px rgba(0,0,0,.3),
+   inset 2px 2px rgba(255,255,255,.3);
+  transition: background-position 999999s, color 999999s, text-shadow 999999s;
+  &:hover, &:focus {
+    text-shadow: #0175b1 -1px 1px, #0175b1 1px 1px, #0175b1 1px -1px, #0175b1 -1px -1px;
+    background: #0175b1 repeating-linear-gradient(135deg, #0175b1, #0175b1 10px, #8fd2f5 10px, #8fd2f5 20px, #0175b1 20px) no-repeat;
+    background-size: 1000% 100%;
+}
+  &:hover {
+  background-position: 0 0;
+}
+  &:focus {
+  color: rgba(255,255,255,0);
+  text-shadow: rgba(1,117,177,0) -1px 1px, rgba(1,117,177,0) 1px 1px, rgba(1,117,177,0) 1px -1px, rgba(1,117,177,0) -1px -1px;
+  background-position: 900% 0;
+  transition: background-position linear 600s, color .5s, text-shadow .5s;
+}
+  &:after {
+  content: "Loading\2026";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .3em .7em;
+  color: rgba(0,0,0,0);
+  text-shadow: none;
+  transition: 999999s;
+}
+  &:focus:after {
+  color: #fff;
+  text-shadow: #0175b1 -1px 1px, #0175b1 1px 1px, #0175b1 1px -1px, #0175b1 -1px -1px;
+  transition: .5s;
+}}
+a.StP-Button3 {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  text-shadow: -2px 2px rgba(255,255,255,.3);
+  line-height: 1.1;
+  padding: .5em 3em .5em .6em;
+  background: linear-gradient(#ecc92b, #fce25b);
+  box-shadow:
+   0 0 0 1px #fce25b inset,
+   -1px 0px rgb(220,195,35), -1px 1px rgb(192,167,7),
+   -2px 1px rgb(219,194,34), -2px 2px rgb(191,166,6),
+   -3px 2px rgb(218,193,33), -3px 3px rgb(190,165,5),
+   -4px 3px rgb(217,192,32), -4px 4px rgb(189,164,4),
+   -5px 4px rgb(216,191,31), -5px 5px rgb(188,163,3),
+   -6px 5px rgb(215,190,30), -6px 6px rgb(187,162,2),
+   -7px 6px rgb(214,189,29), -7px 7px rgb(186,161,1),
+   -8px 7px rgb(213,188,28), -8px 8px rgb(185,160,0),
+   -7px 9px 1px rgba(0,0,0,.4),
+   -5px 11px 1px rgba(0,0,0,.2),
+   -1px 13px 4px rgba(0,0,0,.2),
+   4px 16px 7px rgba(0,0,0,.3);
+  transition: .4s;
+  &:active {
+    box-shadow: none;
+    -webkit-transform: translate(-7px, 8px);
+    transform: translate(-7px, 8px);
+}
+  &:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - .6em/2);
+    right: .6em;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border: .37em solid;
+    border-top: none;
+    border-left: none;
+    width: .6em;
+    height: .6em;
+    box-shadow: inset -2px 2px rgba(255,255,255,.3);
+  }
+}
+#StP-Button1 {
+  animation: bouncing 0.5s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+  background: lightslategrey;
+  border-radius: 2px;
+  display: inline-block;
+  color: rgb(182, 132, 247);
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  padding: 1em 2em 1.1em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+  margin-top: 50px;
+}
+#StP-IFrame {
+  max-height: 800px;
+  height: 900px;
+  max-width: 900px;
+}
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: #45a049;
+  }
+}
+#ThP-Container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
